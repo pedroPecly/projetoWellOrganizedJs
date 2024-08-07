@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/assets/favicon.ico" type="image/x-icon">
+    <title>Well Organized</title>
+</head>
+<body>
+    <header>
+        <a class="title link" href="index.html">Well Organized</a>
+        <div class="paginas">
+            <a class="link" href="index.html">A fazer</a>
+            <span class="separador"> | </span>
+            <a class="link" href="arquivadas.html">Arquivadas</a>
+        </div>
+    </header>
+    
+    <button type="button" id="btn-a-fazer" class="btn-a-fazer">
+        <img src="./public/assets/task-add-icon.png" alt="" srcset="">
+        Adicionar Tarefa
+    </button>
+
+    <form class="addElement" id="form-add-tarefa">
+        <label>Descrição</label>
+        <input type="text" class="txt_field" id="inp-desc" name="descricao">
+        <label>Cor</label>
+        <div class="input-color">
+            <input type="radio" class="color_pick" name="cor" value="blue">
+            <input type="radio" class="color_pick" name="cor" value="green">
+            <input type="radio" class="color_pick" name="cor" value="pink">
+            <input type="radio" class="color_pick" name="cor" value="purple">
+            <input type="radio" class="color_pick" name="cor" value="yellow">
+            <input type="radio" class="color_pick" name="cor" value="orange">
+            <input type="radio" class="color_pick" name="cor" value="white">
+        </div>
+    
+        <button type="submit" class="btn_add" id="btn-adicionar">Adicionar</button>
+    </form>
+    
+    <div class="tarefas_container" id="tarefas">
+    </div>
+    <script src="./public/js/script.js"></script>
+</body>
+</html>
